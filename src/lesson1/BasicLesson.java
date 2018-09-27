@@ -1,4 +1,4 @@
-package lession1;
+package lesson1;
 /*
  * Cover: 1. Data Type
  * 	Data Type: Primitive Data
@@ -17,10 +17,10 @@ package lession1;
 import java.util.Scanner;
 
 
-public class BasicLession {
+public class BasicLesson {
 	
 
-	public BasicLession() {
+	public BasicLesson() {
 		// TODO Auto-generated constructor stub
 	}
 
