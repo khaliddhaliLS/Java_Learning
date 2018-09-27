@@ -16,7 +16,7 @@ package lesson2;
  *     
  *    int[]array3 = new int[]{3, 4, 2, 4, 7};
  *
- *    
+ *    NOTE: Java Collection Interface will be covered in lesson3.
  */
 
 public class NonPrimitiveDataType {
