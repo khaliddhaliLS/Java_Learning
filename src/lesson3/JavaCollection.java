@@ -7,6 +7,9 @@
 package lesson3;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.Vector;
+import java.util.Collection;
 
 public class JavaCollection {
 	/*~~~~~~~~~~~~~~~~~~~~~~~ArrayList~~~~~~~~~~~~~~~~~~
@@ -18,33 +21,40 @@ public class JavaCollection {
 	 *  
 	 */
 	
-	//Following arrlst can hold any type of data simultaneously. 
-	private Collection arrlst = new ArrayList<Integer>();
+	//Following arrlst can hold any type of data simultaneously. It's called raw type ArrayList.
+	private Collection c_arrlst = new ArrayList<Integer>();
 	
-	//Following is generic Array can only hold defined datatype (generic)
-	private Collection<Integer> genericArrlst = new ArrayList<>();
+	//Following is generic Array can only hold defined data type (generic)
+	private Collection<Integer> c_IntArrlst = new ArrayList<>();
+	
+	//List -interface has indexing features, class ArrayList and Vector can implement List Interface.
+	//List is sorted, Same data can be inserted. 
+	List<String> l_IntArrLst = new ArrayList<>();
+	
+	//Vector is class that implement List -interface. Vector increase data by 100%. Since is synchronized, it's Theoretically thread-safe.
+	//But it's better to use ArrayList.
+	Vector<Integer> vector_List = new Vector<>(); 
+		
 	
 	//Constructor
 	public JavaCollection() {
-		// TODO Auto-generated constructor stub
 		
 	}
 	
-	//Getters Setters
-	
-	public Collection getArrlst() {
-		return arrlst;
+	//Getters Setters	
+	public Collection getC_Arrlst() {
+		return c_arrlst;
 	}
 
-	public void setArrlst(Collection arrlst) {
-		this.arrlst = arrlst;
+	public void setC_Arrlst(Collection arrlst) {
+		this.c_arrlst = arrlst;
 	}
 
-	public Collection<Integer> getGenericArrlst() {
-		return genericArrlst;
+	public Collection<Integer> getC_GenericArrlst() {
+		return c_IntArrlst;
 	}
 
-	public void setGenericArrlst(Collection<Integer> genericArrlst) {
-		this.genericArrlst = genericArrlst;
+	public void setC_GenericArrlst(Collection<Integer> genericArrlst) {
+		this.c_IntArrlst = genericArrlst;
 	}
 }
